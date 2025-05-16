@@ -4,7 +4,7 @@ This project provides a framework for evaluating the performance of two differen
 
 ### Description
 
-The primary goal of this framework is to enable comparative analysis of different AI models in a tool-using, conversational context. It simulates an e-commerce environment where AI agents can manage customers, products, and orders using a defined set of tools. User queries are processed by both agents, and their responses, along with the conversation context, are then passed to an evaluator AI which assesses them based on predefined criteria. The system also incorporates a mechanism for human feedback to refine the evaluation process.
+The primary goal of this framework is to enable comparative analysis of different AI models in a tool-using, conversational context. It simulates an e-commerce environment where AI agents can manage customers, products, and orders using a defined set of tools. User queries are processed by both agents, and their responses, along with the conversation context, are then passed to an evaluator AI (Gemini 2.5 pro) which assesses them based on predefined criteria. The system also incorporates a mechanism for human feedback to refine the evaluation process.
 
 ### Features
 
@@ -21,7 +21,7 @@ The primary goal of this framework is to enable comparative analysis of differen
       * Context Awareness
       * Helpfulness
   * **Human-in-the-Loop:** Allows for human clarification during the evaluation phase if the evaluator AI deems it necessary, and stores these clarifications as "learnings."
-  * **Data Simulation:** Operates on in-memory data stores for customers, products, and orders for simulation purposes.
+  * **Data Simulation:** Operates on in-memory data stores (implemented as dictionaries) for customers, products, and orders for simulation purposes.
   * **Modular Design:** Code is structured into classes for storage, conversation context, and the dual agent evaluator.
 
 ### Requirements
@@ -73,7 +73,7 @@ These can be modified in the initial code cells if needed.
 
 ### Code Structure
 
-The Jupyter Notebook `AI_Agents_w_Evals.ipynb` is organized into several key sections:
+The Google Colab Notebook `AI_Agents_w_Evals.ipynb` is organized into several key sections:
 
 1.  **Setup and Imports:**
       * Installs required libraries.
