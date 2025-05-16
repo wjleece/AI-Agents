@@ -136,8 +136,6 @@ The evaluator model then generates a textual evaluation and attempts to provide 
 
 Potential areas for enhancement could include:
 
-  * **Dual Dictionaries:** Both systems are updating the same dictionary, which leads to the later system being penalized for answers that are influenced by a recently created item (oops).
-  * **Better Evaluator System Prompt:** Sometimes the Evaluator asks for clarifications on things that really shouldn't require clarification, thus making it seem like its a dumbass instead of a smart evaluator. This should be fixed iteratively.
   * **More Sophisticated State Management:** Persisting data beyond in-memory storage (e.g., to a database or files).
   * **Expanded Toolset:** Adding more complex e-commerce tools (e.g., payment processing, shipping integration, advanced search/filtering).
   * **Refined Evaluation Criteria:** Developing more granular or objective metrics for evaluation.
