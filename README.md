@@ -142,8 +142,7 @@ Learnings are stored in JSON files on Google Drive. Each learning is a dictionar
     "original_human_input": "The raw text of the human's feedback.",
     "processed_human_input": "The feedback text after potential modification during conflict resolution.",
     "final_learning_statement": "The LLM-synthesized, concise, actionable learning.",
-    "keywords": ["list", "of", "extracted", "keywords"],
     "status": "active" OR "active_forced_redundancy",
-    "learning_target": "AgentAndEvaluator" OR "EvaluatorOnly" 
-    "notes": "Optional field for extra notes, e.g., if forced storage." 
+    "learning_target": "AgentAndEvaluator" OR "EvaluatorOnly",
+    "notes": "Optional field for extra notes, e.g., if forced storage."
 }
