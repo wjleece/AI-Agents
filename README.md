@@ -10,7 +10,7 @@ The core idea is to use a primary AI agent (Worker Agent) to interact with users
 
 * **Dual AI Woker Agent & Evaluator System + Query Router**:
     * **Worker Agent**: Powered by Anthropic's Claude 3.5 Sonnet (or user-defined model), responsible for understanding user queries, interacting with the e-commerce datastore, and generating user-friendly responses.
-    * **Evaluator AI**: Powered by Google's Gemini 2.5 Pro (or user-defined model), responsible for critically assessing the Worker Agent's performance on each turn based on multiple criteria.
+    * **Evaluator AI**: Powered by Google's Gemini 2.5 Flash (or user-defined model; Gemini 2.5 Pro recommended for production environments), responsible for critically assessing the Worker Agent's performance on each turn based on multiple criteria.
     * **Query Classifier**: Uses Google's Gemini 1.5 Flash for fast and efficient classification of user queries into "OPERATIONAL" or "METACOGNITIVE_LEARNINGS_SUMMARY" types, directing the Worker Agent to use appropriate prompts and tools.
 * **Tool-Using Agent**: The Worker Agent can use a predefined set of tools (e.g., creating orders, fetching product details, updating customer information, etc.) to interact with the e-commerce system.
 * **In-Memory Datastore**: Simulates an e-commerce backend with customers, products, and orders, managed by a `Storage` class.
