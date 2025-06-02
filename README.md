@@ -78,7 +78,7 @@ The system is modular, with distinct classes handling specific responsibilities:
 ## 5. How it Works (Workflow per User Turn)
 
 1.  **User Input**: The user enters a query in the `main()` loop.
-2.  **Orchestration Begins**: `AgentOrchestrator.process_user_request()` is called.
+2.  **Orchestration Begins**: `AgentOrchestrator.run_agent_turn()` is called.
 3.  **Query Classification**: `QueryClassifier` determines if the query is "OPERATIONAL" or "METACOGNITIVE_LEARNINGS_SUMMARY".
 4.  **Agent RAG Retrieval**: `KnowledgeManager` retrieves relevant learnings for the Worker Agent (filtering for `learning_target="AgentAndEvaluator"`).
 5.  **Worker Agent Processing**:
